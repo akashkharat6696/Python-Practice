@@ -1,0 +1,26 @@
+# You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1. If a string is longer
+# than the other, append the additional letters onto the end of the merged string.
+
+
+#Code
+class MergeString(object):
+    """so object written here in class meaning is the MergeString class is inherit from the 
+    object class in python 3 not necessary to write the object if you cant write it python will automaticslly
+    consider the object class there"""
+    def merge_alternativelly(self, word1, word2):
+        merged = ""
+        w1 = len(word1)
+        w2 = len(word2)
+        l = min(w1, w2)
+        for i in range(l):
+            merged += word1[i] + word2[i]
+        if w1==w2:
+            return merged
+        elif w1>w2:
+            return merged+word1[l:]
+        elif w1<w2:
+            return merged+word2[l:]
+solution = MergeString()
+result =solution.merge_alternativelly('abc', 'defm')
+print(result)
+
