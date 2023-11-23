@@ -1,0 +1,16 @@
+#Find the no of occurences of given string
+
+class Solution:
+	def my_func(self, a):
+		b = input("please enter the value to check the occurences:")
+		count=0
+		for i in b:
+			if i==a:
+				count+=1
+		print(count)
+
+
+classs = Solution()
+a = input("please enter the char which need to count in the var b:")
+result = classs.my_func(a)
+print(result)
