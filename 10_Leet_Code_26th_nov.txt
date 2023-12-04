@@ -1,0 +1,7 @@
+# Check Python version
+import sys
+print("python version")
+print(sys.version)
+print("Python version in details")
+print(sys.version_info)
+print(sys.api_version)
