@@ -9,7 +9,12 @@
 # Input: nums = [2,7,11,15], target = 9
 # Output: [0,1]
 # Output: Because nums[0] + nums[1] == 9, we return [0, 1].
-
+Enumerate what do
+x = ('apple', 'banana', 'cherry')
+y = enumerate(x)
+print(list(y))
+output will be
+[(0, 'apple'), (1, 'banana'), (2, 'cherry')]
 
 # Code
 def two_sum(nums, target):
