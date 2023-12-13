@@ -1,0 +1,11 @@
+import datetime
+
+now = datetime.datetime.now()
+""""written datetime 2 times because to call the datetime method from the datetime class
+    so basically datetime method is being called by datetime module"""
+
+print("the current time is: ")
+
+print(now.strftime("%y-%m-%d %H:%M:%S"))
+"""strftime method is use to format a datetime object as a string. the name strftime stands for string format time. 
+   it takes formar string as an argument which consist of various format codes representing different components of a datetime"""
